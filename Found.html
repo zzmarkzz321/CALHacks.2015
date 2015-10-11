@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Marco Gutierrez">
+
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Lost Page</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-top.css" rel="stylesheet">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src="jquery-1.11.3.min.js">
+
+
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+<div class="navigation">
+  <div class="line">
+  </div>
+<h2 class = "col-xs-6 Project" style="color:white; text-align:center"> FndIt! Lost and Found Web App</h2>
+<div class="line2">
+  </div>
+</div>
+<div class="Intro">
+
+</div>
+
+<div class="Lost buttons col-xs-12">
+  <p> <span class="glyphicon glyphicon-remove icons"></span></p>
+</div>
+<div class="Lost-Text"><p>Lost?</p></div>
+<div class="create-button">   
+  <input type="button" value="Submit" onclick="msg1()">
+</div>
+<div class="AboutLost">
+  <h4 class="AboutLost"> </h4>
+  <p><span style="color: white">What did you lose?</span> <input type="text"></p>
+  <p><span style= "color: white"> Where did you last see it? </span><input type="text"></p>
+  <p><span style="color: white">Description </span><br>
+    <textarea rows="4" cols="50"></textarea></p><br>
+
+    </div>
+
+<!-- displays the map  -->
+<div id="map"></div>
+
+<div class="Hold"> </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="mapInit.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABYojY580lcNwnuJt9_GgOcJPqZysiPTI&callback=initMap"
+        async defer>
+    </script>
+  </body>
+</html>
