@@ -1,0 +1,150 @@
+#navbar{
+	background-color: black;
+}
+.navbar-brand{
+	color:white;
+}
+
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+background-color: teal;
+}
+
+#map {
+padding: 50, 100, 100, 50;
+height: 75%;
+width: 45%;
+border-radius: 50%;
+border-style: solid;
+border-color: black;
+float: left;
+}
+
+.refresh_button {
+	position: fixed;
+	float: left;
+}
+
+.Intro{
+	font-family: sans-serif;
+	float: right;
+	text-align: center;
+	color: white;
+	height: 600px;
+	width: 50%;
+	border-radius: 10%;
+	background-color: rgba(0,0,0,.45);
+}
+#navbar ul {
+	color: white;
+}
+
+  .navbar-default {
+    background-color: #000001;
+}
+
+.buttons{
+	font-family: Lobster;
+	padding: 50px;
+	line-height: 25px;
+	border-radius: 50%;
+	outline-color: black;
+	color: white;
+	width: 150px;
+	height: 150px;
+	font-size: 42px;
+	border-style: solid;
+	float: right;
+	position: relative;
+}
+.icons{
+	text-align: center;}
+.Lost{
+	background-color: red;
+	position: absolute;
+	margin-left: 700px;
+	margin-top: 120px;
+}
+
+.Lost-Text{
+	font-weight: bold;
+color: white;
+position: absolute;
+margin-left: 750px;
+margin-top: 280px;
+font-size: 18px;
+}
+
+.Found-Text{
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	margin-top: 280px;
+	margin-left: 1150px;
+	font-size: 18px;
+}
+.Found{
+	background-color: blue;
+	position: absolute;
+	margin-left: 1100px;
+	margin-top: 120px;
+}
+
+.create{
+
+		display: inline-block;
+		position: absolute;
+	margin-left: 700px;
+	margin-top: 300px;
+	color: white;
+
+}
+
+.create-button{
+	font-size: 20px;
+	font-family: lobster;
+	background-color: orange;
+	height: 80px;
+	width: 90px;
+	position: absolute;
+	margin-left: 900px;
+	margin-top: 500px;
+	border-radius: 80%;
+	color: white;
+	border-style: solid;
+	float: right;
+	line-height: 25px;
+
+padding: 16px;
+
+}
+
+
+
+.hold{
+	margin-left: 900px;
+	margin-top: 99px;
+	color: white;
+	height: 70px;
+	width: 60px;
+	border-radius: 80%;
+	font-size: 16px;
+}
+
+.normalize{
+	font-family: arial;
+}
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+46,7db9e8+46,7db9e8+46,7db9e8+56,2989d8+85,2989d8+85 */
+body{
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 46%, #7db9e8 46%, #7db9e8 46%, #7db9e8 56%, #2989d8 85%, #2989d8 85%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(46%,#7db9e8), color-stop(46%,#7db9e8), color-stop(46%,#7db9e8), color-stop(56%,#7db9e8), color-stop(85%,#2989d8), color-stop(85%,#2989d8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #1e5799 0%,#7db9e8 46%,#7db9e8 46%,#7db9e8 46%,#7db9e8 56%,#2989d8 85%,#2989d8 85%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #1e5799 0%,#7db9e8 46%,#7db9e8 46%,#7db9e8 46%,#7db9e8 56%,#2989d8 85%,#2989d8 85%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #1e5799 0%,#7db9e8 46%,#7db9e8 46%,#7db9e8 46%,#7db9e8 56%,#2989d8 85%,#2989d8 85%); /* IE10+ */
+background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 46%,#7db9e8 46%,#7db9e8 46%,#7db9e8 56%,#2989d8 85%,#2989d8 85%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */ }
