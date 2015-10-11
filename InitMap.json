@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        margin-top: 50px;
-        height: 75%;
-      }
-    </style>
-  </head>
-  <body>
 
-  <ul> 
-  <li> <a href="#" > Home </a></li>
-  <li> <a href="#" > Log in </a></li>
-  </ul>
-
-    <div id="map"></div>
-
-
-    <script>
+// @Author: Mark renzo Santiago
+// Cal Hacks 2015
 
 var map;
-
 // Note: This example requires that you consent to location sharing when
 // prompted by your browser. If you see the error "The Geolocation service
 // failed.", it means you probably did not give permission for the browser to
 // locate you.
 
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.397, lng: 150.644},
-    zoom: 14
+    zoom: 16
   });
+
+  map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
 
   var contentString = 'testing';
 
@@ -56,15 +32,17 @@ function initMap() {
         lng: position.coords.longitude
       };
 
+      // Creates the marker on the map for current position
       var marker = new google.maps.Marker({
         position: pos,
         map: map,
-        title: 'This will include name of item'
+        title: 'CURRENT LOCATION'
       });
 
       marker.addListener('click', function() {
         infowindow.open(map, marker);
       });
+
       // infoWindow.setPosition(pos);
       // infoWindow.setContent('Item found');
       // TODO: Make the infoWindow 'onclick' for more info.
@@ -85,9 +63,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         'Error: The Geolocation service failed.' :
                         'Error: Your browser doesn\'t support geolocation.');
 }
-
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABYojY580lcNwnuJt9_GgOcJPqZysiPTI&callback=initMap"
-        async defer></script>
-  </body>
-</html>
