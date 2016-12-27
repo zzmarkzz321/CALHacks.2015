@@ -10,3 +10,5 @@ Fnd-it is a lost and found web application meant to bring the community together
 
 ## Current updates:
 None :( This was definitely a fun app to make!
+
+Built at CALHACKS2.0
